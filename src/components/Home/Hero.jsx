@@ -6,7 +6,7 @@ const Hero = () => {
       <Container>
         <Row className="gx-5">
           <Col xl="6 p-5">
-            <div className="hero__content">
+            <div className="hero__content ">
               <h4>Welcome to the</h4>
               <h1>Football Ape Fan Club (FAFC)</h1>
               <p>
