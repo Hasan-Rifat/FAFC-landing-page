@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import bottomArrow from "../assets/images/bottom arrow.png";
-import avater from "../assets/images/avater.png";
+import bottomArrow from "../../assets/images/bottom arrow.png";
+import avater from "../../assets/images/avater.png";
 
 const Avatar = () => {
   return (

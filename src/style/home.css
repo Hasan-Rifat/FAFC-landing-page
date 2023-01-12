@@ -315,6 +315,112 @@
 }
 /* avatar end */
 
+/* football area start */
+.football {
+  padding: 100px 0;
+  background: #010101;
+}
+
+.football__area {
+}
+.football__area__contain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.football__area_div {
+}
+/* grid call span 1 */
+.football__area_div:first-child {
+  grid-column: span 1 / span 1;
+}
+.football__area_div:last-child {
+  grid-column: span 2 / span 2;
+}
+.football__area_div h2 {
+  font-size: 21px;
+  line-height: 33.6px;
+  font-weight: 400 !important;
+}
+.football__area_div h2 strong {
+  font-weight: 800;
+}
+
+.football__area_div p {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 0 10px !important;
+}
+.football__area_div h2 {
+}
+.football__area_div h2 strong {
+}
+.football__btn {
+  margin-top: 45px;
+}
+
+/* skill */
+
+.skill h1 {
+  text-align: center;
+  color: white;
+}
+.skill span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ccf300;
+}
+.skill-group {
+  margin: 0 auto;
+  width: 70%;
+}
+.skill-group > h2 {
+  color: white;
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 800;
+  margin-bottom: 32px;
+  margin-top: 12px;
+}
+.skill-group > p {
+  color: white;
+}
+.skill-bar {
+  width: 100%;
+  background-color: rgba(204, 243, 0, 0.2);
+}
+.skill-value {
+  text-align: right;
+  height: 17px;
+  color: black;
+}
+.skill1 {
+  width: 80%;
+  background-color: #ccf300;
+}
+.skill2 {
+  width: 85%;
+  background-color: #ccf300;
+}
+.skill3 {
+  width: 70%;
+  background-color: #ccf300;
+}
+.skill4 {
+  width: 80%;
+  background-color: #ccf300;
+}
+.office {
+  width: 70%;
+  background-color: #ccf300;
+}
+.acrobat {
+  width: 60%;
+  background-color: #ccf300;
+}
+/* football area end */
+
 /* footer start  */
 .footerupHero {
   margin-top: 40px;
@@ -407,6 +513,13 @@
     top: 0%;
   }
   /* about */
+  /* football */
+  .skill {
+    margin-top: 70px;
+  }
+  .skill-group {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -415,6 +528,9 @@
   }
   .hero__clock {
     margin-top: 90px;
+  }
+  .avatar__icon {
+    right: 33%;
   }
 }
 @media (max-width: 720px) {
