@@ -22,7 +22,7 @@ const Home = () => {
             </div>
           </Col>
           <Col xl="6">
-            <div>
+            <div className="clock">
               <div className="bg-black hero__clock ">
                 <div className="extra__part  ">
                   <span></span>

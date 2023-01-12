@@ -47,26 +47,29 @@
   font-size: 18px;
   line-height: 27px;
   color: #010101;
+  margin-top: 25px;
 }
 .hero__btn {
   margin-top: 40px;
 }
+.clock {
+  position: relative;
+  z-index: 10;
+}
 .hero__clock {
   border-radius: 30px;
   border: 10px solid #98b500;
-  z-index: 10;
-  position: relative;
 }
 
 .extra__part {
   position: absolute;
-  padding: 16px 60px;
+  padding: 30px 60px;
   text-align: center;
   background: #1c1c1c;
   border-radius: 24px;
   z-index: -10;
   left: 37%;
-  top: -25px;
+  top: -42px;
 }
 .extra__part span {
   text-align: center;
@@ -123,3 +126,21 @@
   border: none !important;
 }
 /* hero end */
+
+@media (max-width: 1348px) {
+  .hero::before {
+    top: 52%;
+  }
+}
+@media (max-width: 514px) {
+  .hero::before {
+    top: 57.8%;
+  }
+  .hero__clock {
+    margin-top: 80px;
+  }
+
+  .clock__item {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
