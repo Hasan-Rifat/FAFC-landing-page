@@ -6,18 +6,21 @@ import reportWebVitals from "./reportWebVitals";
 import Layout from "./Layouts/Layout";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ThemeProvider } from "react-bootstrap";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ThemeProvider
-      breakpoints={["xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
-      minBreakpoint="xxl"
-    >
-      <Layout>
-        <App />
-      </Layout>
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider
+        breakpoints={["xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
+        minBreakpoint="xxl"
+      >
+        <Layout>
+          <App />
+        </Layout>
+      </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

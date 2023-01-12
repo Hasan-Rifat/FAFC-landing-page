@@ -1,3 +1,17 @@
 .hero {
   background: #ccf300;
 }
+
+.text-nav {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0px 25px !important;
+  display: inline-block;
+}
+.nav__active {
+  font-weight: 800;
+}
+.btn {
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+}

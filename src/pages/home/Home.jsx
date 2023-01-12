@@ -1,12 +1,16 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import "../../style/home.css";
+
+import logo from "../../assets/images/logo.png";
+
 const Home = () => {
   return (
-    <section className="hero">
-      <Container>
+    <section className="hero" sticky="top">
+      {/*   <Container>
         <Row>
-          <Col xl="2">logo</Col>
+          <Col xl="2">
+            <img className="logo" src={logo} alt="" />
+          </Col>
           <Col xl="8">
             <div className="text-center">center</div>
           </Col>
@@ -14,7 +18,7 @@ const Home = () => {
             <p className="text-end">right</p>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
     </section>
   );
 };

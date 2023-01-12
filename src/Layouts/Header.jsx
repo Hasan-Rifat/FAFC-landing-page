@@ -1,28 +1,63 @@
 import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/images/logo.png";
+import "../style/home.css";
 
 const Header = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg" className="hero" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand>
+          <img className="logo" src={logo} alt="logo" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+          <Nav className="mx-auto">
+            <Nav.Link>
+              <Link
+                className=" text-nav text-black text-decoration-none nav__active"
+                to="/"
+              >
+                Home
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                className="text-nav text-black text-decoration-none"
+                to="/about-us"
+              >
+                About us
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                className="text-nav text-black text-decoration-none"
+                to="/nfts"
+              >
+                Nfts
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                className="text-nav text-black text-decoration-none"
+                to="/roadmap"
+              >
+                Roadmap
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link
+                className="text-nav text-black text-decoration-none"
+                to="/faqs"
+              >
+                Faqs
+              </Link>
+            </Nav.Link>
           </Nav>
+          <Navbar>
+            <Button className="btn btn-dark ">Join Discord</Button>
+          </Navbar>
         </Navbar.Collapse>
       </Container>
     </Navbar>
