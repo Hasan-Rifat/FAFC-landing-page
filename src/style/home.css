@@ -201,7 +201,6 @@
   margin-bottom: 40px;
 }
 .our__fan__club span {
-  color: #fff;
   color: #ccf300;
 }
 .our__fan__club p {
@@ -236,6 +235,85 @@
 }
 
 /* about end */
+
+/* avatar start */
+.avatar {
+  padding-top: 100px;
+  padding-bottom: 130px;
+  background: #010101;
+}
+.avatar__img {
+  padding: 50px !important;
+}
+.avatar__img img {
+  max-width: 100%;
+}
+.avatar__area {
+  position: relative;
+}
+.avatar__icon {
+  position: absolute;
+  top: -200px;
+  right: -20%;
+}
+
+.avatar__content h1 {
+  font-size: 51px;
+  line-height: 61.2px;
+}
+.avatar__content h1 span {
+  color: #ccf300;
+}
+.avatar__content p {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 30px 0 50px;
+}
+
+.avatar__bottom {
+  padding: 30px;
+  background: #1c1c1c;
+  border-radius: 20px;
+}
+.avatar__bottom__content {
+  position: relative;
+}
+.avatar__bottom p {
+  font-size: 16px;
+  line-height: 27px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.avatar__button__area {
+  position: absolute;
+  top: -10%;
+  left: 10%;
+}
+.avatar__button__area__button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px !important;
+}
+.avatar__button__area__button span {
+  display: block;
+}
+
+.avatar__button__area__button {
+  background: #ccf300 !important;
+  border-radius: 40px !important;
+  padding: 10px 30px !important;
+  color: #010101 !important;
+  font-size: 16px;
+}
+.avatar__button__area__span {
+  width: 17px;
+  height: 17px;
+  background: #010101;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* avatar end */
 
 /* footer start  */
 .footerupHero {
@@ -351,7 +429,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   /* hero */
   .hero {
     padding: 100px 0 100px;
@@ -376,6 +454,12 @@
     left: 31%;
     top: 68px;
   }
+
+  .about__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
   /* about */
   .about__images__section {
     padding: 50px;
@@ -391,6 +475,25 @@
     right: -10%;
     height: 30%;
     width: 30%;
+  }
+  /* avatar */
+  .avatar__img {
+    padding: 20px !important;
+    margin-top: 20px;
+  }
+  .avatar__icon {
+    top: -164px;
+    right: 16%;
+  }
+  .avatar__bottom__content {
+    padding-top: 37px;
+  }
+  .avatar__content h1 {
+    font-size: 29px;
+    line-height: 43.2px;
+  }
+  .avatar__button__area {
+    top: 5%;
   }
 }
 @media (max-width: 500px) {

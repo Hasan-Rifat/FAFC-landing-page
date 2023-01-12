@@ -1,5 +1,6 @@
 import React from "react";
-import About from "../../components/About";
+import Avatar from "../../components/Avatar";
+import About from "../../components/Home/About";
 import Hero from "../../components/Home/Hero";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <>
       <Hero />
       <About />
+      <Avatar />
     </>
   );
 };

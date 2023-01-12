@@ -1,15 +1,15 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import img1 from "../assets/images/about 1.png";
-import img2 from "../assets/images/about 2.png";
-import img3 from "../assets/images/about 3.png";
-import img4 from "../assets/images/about 4.png";
-import img5 from "../assets/images/about 5.png";
-import img6 from "../assets/images/about 6.png";
-import img7 from "../assets/images/about 7.png";
-import img8 from "../assets/images/about 8.png";
-import img9 from "../assets/images/about 9.png";
-import aboutImg from "../assets/images/about.png";
+import img1 from "../../assets/images/about 1.png";
+import img2 from "../../assets/images/about 2.png";
+import img3 from "../../assets/images/about 3.png";
+import img4 from "../../assets/images/about 4.png";
+import img5 from "../../assets/images/about 5.png";
+import img6 from "../../assets/images/about 6.png";
+import img7 from "../../assets/images/about 7.png";
+import img8 from "../../assets/images/about 8.png";
+import img9 from "../../assets/images/about 9.png";
+import aboutImg from "../../assets/images/about.png";
 
 const About = () => {
   const images = [
